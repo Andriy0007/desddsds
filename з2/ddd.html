@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchable and Sortable List</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .no-results {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Searchable and Sortable List</h1>
+
+    <input type="text" id="search" placeholder="Search...">
+    <select id="sort">
+        <option value="alphabet">Sort by Alphabet</option>
+        <option value="date">Sort by Date</option>
+    </select>
+
+    <ul id="itemList"></ul>
+    <p id="noResults" class="no-results" style="display: none;">Нічого не знайдено</p>
+</body>
+</html>
